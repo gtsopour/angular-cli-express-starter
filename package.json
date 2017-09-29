@@ -1,0 +1,21 @@
+{
+  "name": "angular-cli-express-starter",
+  "version": "1.0.0",
+  "description": "NodeJS Express - Angular CLI (server - client)",
+  "scripts": {
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "install:packages": "npm install && npm run install:client && npm run install:server",
+    "build:client": "cd client && ng build --prod --sm=false --aot=true --output-path=../dist/client",
+    "build:server": "cd server && cpx \"**\" ../dist/server",
+    "build": "npm run build:client && npm run build:server",
+    "start": "concurrently --kill-others \"cd client && ng serve --disable-host-check --proxy-config proxy.conf.json\" \"cd server && nodemon ./bin/www\" "
+  },
+  "author": "George Tsopouridis",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "cpx": "^1.5.0",
+    "nodemon": "^1.12.1"
+  }
+}
