@@ -35,7 +35,7 @@ Please note that the PORT 3000 is the default NodeJS Express PORT.
 $ npm run build
 ```
 
-## Run Build
+## Run Build (production ready)
 ```bash
 $ cd dist/server
 $ PORT=8000 NODE_ENV=production node bin/www
