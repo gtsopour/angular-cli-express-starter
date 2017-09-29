@@ -9,7 +9,7 @@ $ npm run start
 
 Browse the Application (Client):
 ```bash
-http://localhost:8080/
+http://localhost:4200/
 ```
 
 Browse the Server:
