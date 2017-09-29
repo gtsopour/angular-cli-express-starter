@@ -1,5 +1,5 @@
 # NodeJS Express (server) with Angular CLI (client) Starter 
-NodeJS Express (server) with Angular CLI (client) Starter 
+NodeJS Express (server) with Angular CLI (client) Starter. This starter gives you the opportunity to separate totally your client and server applications ang bring them together for Development (proxy) and Production. Please note that the code in the client just came from the execution `$ ng new client` and the code in the server came from the execution `$ express --view=pug server` (after installing the Express Generator `$ npm install express-generator -g`).
 
 ## Development
 ```bash
@@ -7,7 +7,7 @@ $ npm run install:packages
 $ npm run start
 ```
 
-Browse the Client:
+Browse the Application (Client):
 ```bash
 http://localhost:8080/
 ```
@@ -41,7 +41,7 @@ $ cd dist/server
 $ PORT=8000 NODE_ENV=production node bin/www
 ```
 
-Browse the Server:
+Browse the Application (Client/Server):
 ```bash
 http://localhost:8000/
 http://localhost:8000/api
